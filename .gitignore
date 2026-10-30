@@ -1,0 +1,19 @@
+# Secretos
+.env
+.env.*
+!.env.example
+
+# Dependencias
+node_modules/
+.venv/
+__pycache__/
+
+# Builds y cachés
+dist/
+build/
+.next/
+.pytest_cache/
+.ruff_cache/
+
+# Sistema
+.DS_Store
