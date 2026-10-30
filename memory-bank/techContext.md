@@ -2,7 +2,7 @@
 
 ## Estado del repositorio
 
-Hoy el monorepo contiene estructura y documentación. **No hay aplicaciones ejecutables**, ni `package.json` o `pyproject.toml` en la raíz, ni `docker-compose.yml`, ni CI. El `.gitignore` está vacío.
+Hoy el monorepo contiene estructura y documentación. **No hay aplicaciones ejecutables**, ni `package.json` o `pyproject.toml` en la raíz, ni `docker-compose.yml`, ni CI.
 
 ## Stack
 
@@ -25,7 +25,7 @@ Esta tabla es obligatoria. **No se crean árboles paralelos** como `apps/`, `fro
 
 | Ruta | Qué va aquí | Notas |
 | --- | --- | --- |
-| `uis/website` | Web pública corporativa | Inicio en `/`; marca y textos alineados con `BRIEFING.md` |
+| `uis/website` | Web pública corporativa y portal de seguimiento | Inicio en `/`, portal en `/tracking`; marca y textos alineados con `BRIEFING.md` |
 | `uis/backoffice` | App interna | Layout propio, separado de la web; entrada en `/`; dashboards internos |
 | `uis/` (otras) | Otras interfaces | Solo con una necesidad distinta y su propio README |
 | `services/` | APIs y workers | Una API FastAPI central, previsiblemente `services/api`, con un router por dominio |

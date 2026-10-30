@@ -14,32 +14,37 @@ Fase de cimientos. El repositorio tiene contexto e infraestructura para agentes,
 - [x] `AGENTS.md` con lecturas iniciales, flujo previo al commit y zonas protegidas.
 - [x] Reglas en `.agents/rules/` con alcance explícito.
 - [x] Skill `delivery-check` con script de comprobación.
+- [x] `CONTEXT.md` y `CONTEXT.es.md` sustituidos por el briefing de TrackFlow en inglés y español.
+- [x] `.gitignore` añadido.
 
 ## En curso
 
-- [ ] PR de `feature/agent-memory-bank` hacia `main`, pendiente de revisión.
+- Nada en curso.
 
 ## Próximos pasos
 
-1. Sustituir o retirar el `CONTEXT.md` de la plantilla, que sigue siendo un placeholder.
-2. Añadir `.gitignore` (`.env*`, `node_modules/`, `.venv/`, artefactos de build).
-3. Crear `uis/website` y `uis/backoffice` en las rutas del mapa de `techContext.md`.
-4. Crear `services/api` con FastAPI y un primer router de seguimiento.
-5. Decidir base de datos, proveedor de LLM y vector store, y registrarlo en `docs/`.
-6. Definir la evaluación del agente de CX en `data/eval/` antes de construirlo.
+1. Crear `uis/website` y `uis/backoffice` en las rutas del mapa de `techContext.md`.
+2. Crear `services/api` con FastAPI y un primer router de seguimiento.
+3. Decidir base de datos, proveedor de LLM y vector store, y registrarlo en `docs/`.
+4. Definir la evaluación del agente de CX en `data/eval/` antes de construirlo.
 
 ## Dudas abiertas
 
-| Duda | Criterio provisional | Quién decide |
-| --- | --- | --- |
-| El nombre del CEO no es coherente: `BRIEFING.md` dice Thomas Harry y Thomas Espinoza; `CONTEXT.es.md` dice Thomas Harry y Daniel Espinoza | Usar Thomas Harry, que es quien figura como fundador y CEO | Tech lead |
-| `CONTEXT.es.md` no incluye el área de Personas y `CONTEXT.md` lista TrackFlow como México + España | Manda `BRIEFING.md` | Tech lead |
-| «8 transportistas» cuenta DHL dos veces, una por país | Modelar 8 relaciones transportista-país | Carlos Vega |
-| No hay criterio de uso documentado para DHL en España | No priorizarlo en reglas hasta confirmarlo | Carlos Vega |
-| El portal público de seguimiento no tiene ruta asignada | Propuesta: una ruta dentro de `uis/website` | Tech lead |
+Ninguna que bloquee el trabajo.
+
+## Decisiones sobre discrepancias
+
+| Discrepancia | Decisión |
+| --- | --- |
+| El briefing da dos nombres para el CEO (Thomas Harry y Thomas Espinoza) | Se usa Thomas Harry, que figura como fundador y CEO. `BRIEFING.md` se mantiene como copia literal |
+| Versiones distintas del contexto en `CONTEXT.md` y `CONTEXT.es.md` | Sustituidas por el briefing; manda `BRIEFING.md` |
+| «8 transportistas» cuenta DHL dos veces | Se modelan 8 relaciones transportista-país |
+| DHL España no tiene criterio de uso documentado | Queda sin prioridad en las reglas de selección; se usa como alternativa cuando no aplica otro criterio |
+| El portal público de seguimiento no tenía ruta | Será una ruta de `uis/website`: `/tracking` |
 
 ## Registro de cambios relevantes
 
 | Fecha | Cambio |
 | --- | --- |
 | 2026-10-30 | Creada la infraestructura de agentes del monorepo. |
+| 2026-10-30 | Resueltas las discrepancias del briefing y añadidos `CONTEXT` y `.gitignore`. |

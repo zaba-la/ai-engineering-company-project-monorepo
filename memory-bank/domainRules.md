@@ -23,7 +23,7 @@
 | EE. UU. | DHL | Única opción fiable para internacional desde Los Ángeles |
 | España | SEUR | Mejor cobertura en zonas rurales de Aragón |
 | España | MRW | Mejor tarifa para menos de 2 kg |
-| España | DHL | Disponible en España; sin criterio de uso documentado |
+| España | DHL | Alternativa cuando no aplica otro criterio |
 | España | 2 locales | Solo área metropolitana de Zaragoza |
 
 El sistema elige transportista según destino, peso, tipo de producto y urgencia. Un cambio manual solo es posible como excepción aprobada por Carlos Vega.
@@ -51,6 +51,6 @@ El sistema elige transportista según destino, peso, tipo de producto y urgencia
 - No promete compensaciones, descuentos ni excepciones.
 - No resuelve devoluciones internacionales: las deriva al equipo de Sofía Ramos.
 
-## Discrepancias abiertas
+## Discrepancias resueltas
 
-Están en la sección «Dudas abiertas» de [`progress.md`](./progress.md).
+Están en la sección «Decisiones sobre discrepancias» de [`progress.md`](./progress.md).
